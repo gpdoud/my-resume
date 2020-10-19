@@ -1,0 +1,10 @@
+<div>
+  <h4>Work history</h4>
+  <div *ngFor="let job of workHistory">
+    {{ job.company }} | {{ job.title }} | {{ job.duration }}
+    <ul *ngFor="let acc of job.accomplishments">
+      <li>{{ acc }}</li>
+    </ul>
+  </div>
+  <h4>Education</h4>
+</div>
